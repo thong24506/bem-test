@@ -46,9 +46,9 @@
                 }
 
                 const icons = {
-                    succes: 'fas fa-check-circle',
+                    success: 'fas fa-check-circle',
                     info: 'fas fa-info-circle',
-                    warning: 'fas fa-check-circle',
+                    warning: 'fas fa-exclamation-circle',
                     error: 'fas fa-exclamation-circle'
                 }; 
                 const icon = icons[type];
@@ -84,7 +84,7 @@
         function showInfoToast() {
             toast({
                 title: 'Info',
-                massage: '',
+                massage: 'Thông tin dang loading',
                 type: 'info',
                 duration: 5000
             })
@@ -93,7 +93,7 @@
         function showWarningToast() {
             toast({
                 title: 'Warning',
-                massage: '',
+                massage: 'Đã có vấn đề nào đó xảy ra',
                 type: 'warning',
                 duration: 5000
             })
@@ -102,7 +102,7 @@
         function showErrorToast() {
             toast({
                 title: 'Error',
-                massage: 'MCó lỗi xảy ra vui lòng liên hệ quản trị viên',
+                massage: 'Có lỗi xảy ra vui lòng liên hệ quản trị viên',
                 type: 'error',
                 duration: 5000
             })
